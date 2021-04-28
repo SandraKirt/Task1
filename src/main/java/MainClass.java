@@ -7,9 +7,16 @@ public class MainClass {
 
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter input file name with full path to it : ");
-        String path = input.nextLine();
+        String path;
+
+        if (args.length==0 || args[0].isEmpty()) {
+            Scanner input = new Scanner(System.in);
+            System.out.println("Enter input file name with full path to it : ");
+            path = input.nextLine();
+        }else {
+
+            path = args[0];
+        }
         System.out.println(path);
 
         ArrayList<String> rows = new ArrayList<String>();
