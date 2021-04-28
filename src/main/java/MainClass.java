@@ -19,8 +19,8 @@ public class MainClass {
         }
         System.out.println(path);
 
-        ArrayList<String> rows = new ArrayList<String>();
-        ArrayList<Integer> digits = new ArrayList<Integer>();
+        ArrayList<String> rows = new ArrayList<>();
+        ArrayList<Integer> digits = new ArrayList<>();
 
         try {
             File inputFile = new File(path);
